@@ -1,0 +1,9 @@
+name: mlflow-papermill-example
+
+entry_points:
+  main:
+    parameters:
+      a: float
+      b: float
+      c: float
+    command: "papermill -p a {a} -p b {b} -p c {c} sin.ipynb mlflow://out.ipynb"
