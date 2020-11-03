@@ -1,6 +1,7 @@
 name: mlflow-papermill-example
 
 entry_points:
+  version: main  # git branch
   main:
     parameters:
       a: float
